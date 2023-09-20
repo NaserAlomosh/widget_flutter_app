@@ -1,0 +1,29 @@
+{
+    "project_info": {
+        "project_number": "17452215275",
+        "project_id": "flutter-widget-edbde",
+        "storage_bucket": "flutter-widget-edbde.appspot.com"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:17452215275:android:8c7e9d2f1782724c88c7ae",
+                "android_client_info": {
+                    "package_name": "com.example.widget_flutter_app"
+                }
+            },
+            "oauth_client": [],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyC2pi7amSZ2rmu2pwefXoCOHXrVoRWE8XQ"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": []
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}
