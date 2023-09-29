@@ -19,6 +19,7 @@ class HomeView extends StatelessWidget {
               listener: (context, state) {},
               builder: (context, state) {
                 return Drawer(
+                  width: 200.w,
                   backgroundColor: Colors.black.withOpacity(0.4),
                   shadowColor: Colors.black.withOpacity(0.4),
                   surfaceTintColor: Colors.amber,
@@ -65,7 +66,7 @@ Widget builderWidget(List<BannersModel> bannersList, BuildContext context) {
             items: bannersList
                 .map(
                   (e) => Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 5.w),
+                    padding: EdgeInsets.symmetric(horizontal: 1.w),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
                       child: Image.network(
@@ -78,7 +79,7 @@ Widget builderWidget(List<BannersModel> bannersList, BuildContext context) {
                 )
                 .toList(),
             options: CarouselOptions(
-              height: 200.h,
+              height: 250.h,
               initialPage: 0,
               viewportFraction: 1,
               enableInfiniteScroll: true,
@@ -123,8 +124,8 @@ Widget builderWidget(List<BannersModel> bannersList, BuildContext context) {
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
+                      const Padding(
+                        padding: EdgeInsets.all(8.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [

@@ -6,14 +6,17 @@ part 'home_state.dart';
 
 class HomeCubit extends Cubit<HomeState> {
   List<BannersModel> bannersList = [];
+
   HomeCubit() : super(HomeInitialState());
   Future<void> getBannersData() async {
     emit(HomeLoadingState());
-    FirebaseFirestore.instance.collection('banners').get().then((value) {
-      for (var element in value.docs) {
-        bannersList.add(BannersModel.fromJosn(element.data()));
-      }
-      emit(HomeSuccessesState());
-    });
+    FirebaseFirestore.instance.collection('banners').get().then(
+      (value) {
+        for (var element in value.docs) {
+          bannersList.add(BannersModel.fromJosn(element.data()));
+        }
+        emit(HomeSuccessesState());
+      },
+    );
   }
 }

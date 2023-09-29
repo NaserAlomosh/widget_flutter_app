@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:widget_flutter_app/style/color_app.dart';
-
-import 'package:widget_flutter_app/widget/botton_nav_bar.dart';
+import 'package:widget_flutter_app/view/home.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -43,7 +42,11 @@ class MyApp extends StatelessWidget {
             titleMedium: TextStyle(color: Colors.white),
           ),
         ),
-        home: const CustomGoogleNavBar(),
+        home: const Scaffold(
+          body: Center(
+            child: HomeView(),
+          ),
+        ),
       ),
     );
   }
