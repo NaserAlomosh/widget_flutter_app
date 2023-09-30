@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:widget_flutter_app/classes/firebase/add_name_library/add_name_library.dart';
 import 'package:widget_flutter_app/style/color_app.dart';
 import 'package:widget_flutter_app/view/home.dart';
 
@@ -12,6 +13,8 @@ void main() async {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
   ));
+  //await addNameLibrary('');
+  await addNameLibrary('type');
   runApp(const MyApp());
 }
 

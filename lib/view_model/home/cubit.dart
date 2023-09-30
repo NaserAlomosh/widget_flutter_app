@@ -1,8 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:widget_flutter_app/model/banners/banners.dart';
-
-part 'home_state.dart';
+import 'package:widget_flutter_app/view_model/home/states.dart';
 
 class HomeCubit extends Cubit<HomeState> {
   List<BannersModel> bannersList = [];

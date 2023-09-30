@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:widget_flutter_app/model/banners/banners.dart';
-import 'package:widget_flutter_app/view_model/home/home_cubit.dart';
+import 'package:widget_flutter_app/view_model/home/cubit.dart';
 import 'package:shadow/shadow.dart';
+
+import '../view_model/home/states.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
