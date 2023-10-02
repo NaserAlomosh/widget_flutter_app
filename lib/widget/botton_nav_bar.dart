@@ -5,8 +5,8 @@ import 'package:widget_flutter_app/constant/icon/app_icon.dart';
 import 'package:widget_flutter_app/style/color_app.dart';
 
 import '../constant/string/app_string_en.dart';
-import '../view/account.dart';
-import '../view/home.dart';
+import '../view/account/account.dart';
+import '../view/home/home.dart';
 import '../view/search.dart';
 import '../view/shopping_cart.dart';
 

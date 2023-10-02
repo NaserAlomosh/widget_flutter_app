@@ -51,7 +51,9 @@ dependencies:
   video_player: ^2.7.2
   ## Select From Box: ^0.1.0
   dropdown_button2: ^2.3.9
-
+  ## Animatiom Pic
+  lottie: ^2.6.0
+  animations: ^2.0.8
 
 
 

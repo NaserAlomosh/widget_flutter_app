@@ -3,12 +3,12 @@ class LibraryModel {
   String? image;
   String? gitHubUrl;
   String? pubDevUrl;
-  String? collectionName;
+  String? type;
   LibraryModel.fromJosn(Map<String, dynamic> json) {
     name = json["name"];
     image = json["image"];
     gitHubUrl = json["gitHubUrl"];
     pubDevUrl = json["pubDevUrl"];
-    collectionName = json["collectionName"];
+    type = json["type"];
   }
 }

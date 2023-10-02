@@ -1,10 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:widget_flutter_app/model/name_library/name_library.dart';
 
-Future<List<String>> getLibraryName() async {
-  List<String> libraryName = [];
+Future<List<NameLibraryModel>> getLibraryName() async {
+  List<NameLibraryModel> libraryName = [];
   await FirebaseFirestore.instance.collection('lib_name').get().then((value) {
     for (var element in value.docs) {
-      libraryName.add(element.id);
+      libraryName.add(NameLibraryModel.fromJosn(element.data()));
     }
   });
   return libraryName;

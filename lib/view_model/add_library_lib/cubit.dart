@@ -12,15 +12,15 @@ class AddNewLibCubit extends Cubit<AddNewLibState> {
     required String? pubDevUrl,
     required String? type,
   }) async {
-    if (isNotNullValue(name)) {
+    if (isNotValue(name)) {
       emit(AddNameErrorState());
-    } else if (isNotNullValue(image)) {
+    } else if (isNotValue(image)) {
       emit(AddImageErrorState());
-    } else if (isNotNullValue(gitHubUrl)) {
+    } else if (isNotValue(gitHubUrl)) {
       emit(AddgitHubUrlErrorState());
-    } else if (isNotNullValue(pubDevUrl)) {
+    } else if (isNotValue(pubDevUrl)) {
       emit(AddpubDevUrlErrorState());
-    } else if (isNotNullValue(type)) {
+    } else if (isNotValue(type)) {
       emit(AddTypeErrorState());
     } else {
       emit(AddNewLoadingState());
